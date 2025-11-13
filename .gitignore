@@ -3,25 +3,46 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environment
+# Virtual environments
 venv/
 .venv/
-Env/
 env/
+ENV/
 
 # Distribution / packaging
 build/
 dist/
 *.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# VS Code/workspace settings
+.vscode/
+
+# Environment variables
+.env
+.env.*
+
+# Streamlit local files
+.streamlit/secrets.toml
+
+# OS files
+.DS_Store
+Thumbs.db
 
 # Pytest
 .pytest_cache/
 
-# Editor files
-.vscode/
+# Editor swap files
 *.swp
 *.swo
 
-# Environment files
-.env
-./venv
+# Local virtualenv directory (alternative paths)
+venv/
+./venv/
+.venv/
+
+# End of .gitignore
