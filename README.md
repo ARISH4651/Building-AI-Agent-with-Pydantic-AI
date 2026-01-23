@@ -2,6 +2,10 @@
 
 A lightweight, powerful generative AI search tool that combines real-time web search with LLM synthesis. Built with Pydantic AI and Streamlit, it leverages Groq's Llama 3.1 for rapid inference and Tavily for accurate search results.
 
+## Live link
+https://pydanticai.streamlit.app/
+
+
 ## Overview
 
 This application serves as an intelligent search assistant. Instead of just returning a list of links, it performs a web search based on your query, analyzes the results, and synthesizes a direct, comprehensive answer using a Large Language Model (LLM).
