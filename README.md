@@ -1,64 +1,36 @@
-# 🔎 GenAI Search Agent
+# GenAI Search Agent
 
-This repository contains a simple yet powerful Generative AI Search Agent built with [Pydantic AI](https://github.com/pydantic/pydantic-ai), [Streamlit](https://streamlit.io/), and [Groq](https://groq.com/). The agent utilizes the **Llama 3.1** model and **Tavily Search** to provide real-time, accurate search results for user queries.
+A lightweight, powerful generative AI search tool that combines real-time web search with LLM synthesis. Built with Pydantic AI and Streamlit, it leverages Groq's Llama 3.1 for rapid inference and Tavily for accurate search results.
 
-## 🚀 Features
+## Overview
 
-- **Generative Search:** Uses an AI agent to search the web and synthesize answers.
-- **Interactive UI:** Built with Streamlit for a clean and easy-to-use interface.
-- **Powered by Groq:** Leverages the speed of Groq's Llama 3.1 model.
-- **Tavily Integration:** accurate and reliable web search capabilities.
+This application serves as an intelligent search assistant. Instead of just returning a list of links, it performs a web search based on your query, analyzes the results, and synthesizes a direct, comprehensive answer using a Large Language Model (LLM).
 
-## 🛠️ Prerequisites
+## Features
 
-Before running the application, ensure you have the following:
+- **Generative Search**: Synthesizes answers from multiple web sources rather than just listing links.
+- **High-Performance AI**: Powered by Groq's Llama 3.1 model for near-instant inference speeds.
+- **Accurate Retrieval**: Uses Tavily Search API for optimized, factual web scraping.
+- **Clean UI**: Minimalist interface built with Streamlit for easy interaction.
 
-- Python 3.9 or higher installed.
-- **Groq API Key:** Get it from [Groq Cloud](https://console.groq.com/).
-- **Tavily API Key:** Get it from [Tavily](https://tavily.com/).
+## Tech Stack
 
-## 📦 Installation
+- **Framework**: [Streamlit](https://streamlit.io/)
+- **AI Agent**: [Pydantic AI](https://github.com/pydantic/pydantic-ai)
+- **LLM Provider**: [Groq](https://groq.com/) (Llama 3.1)
+- **Search Tool**: [Tavily AI](https://tavily.com/)
+- **Language**: Python
 
-1. **Clone the repository:**
+## Installation
+
+### Prerequisites
+- Python 3.9 or higher
+- A [Groq API Key](https://console.groq.com/)
+- A [Tavily API Key](https://tavily.com/)
+
+### Steps
+
+1. **Clone the repository**
    ```bash
    git clone https://github.com/ARISH4651/Pydantic-ai-agent.git
    cd Pydantic-ai-agent
-   ```
-
-2. **Install dependencies:**
-   It is recommended to use a virtual environment.
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## ⚙��� Configuration
-
-1. Create a `.env` file in the root directory of the project.
-2. Add your API keys to the `.env` file:
-
-   ```env
-   GROQ_API_KEY=your_groq_api_key_here
-   TAVILY_API_KEY=your_tavily_api_key_here
-   ```
-
-   Alternatively, you can set these as environment variables in your system.
-
-## ▶️ Usage
-
-To run the application, execute the following command:
-
-```bash
-streamlit run app.py
-```
-
-The application will open in your default web browser. Enter your query in the input box and click **Search** to get results.
-
-## 📂 Project Structure
-
-- `app.py`: The main entry point for the Streamlit application. Handles the UI and user interaction.
-- `agent_utils.py`: Contains the logic for initializing the Pydantic AI agent, configuring tools (Tavily), and handling API keys.
-- `requirements.txt`: Lists the Python dependencies required for the project.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
